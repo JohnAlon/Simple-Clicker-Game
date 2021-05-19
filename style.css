@@ -48,13 +48,7 @@
 
 
 @media (max-width: 560px) {
-    #entity {
-        width: 310px;
-        height: 235px;
+    #entity{
         margin-left: 20px;
-    }
-    
-    .progress__line-bg {
-        max-width: 350px;
     }
 }
