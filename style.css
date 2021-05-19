@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#scoreCounter{
+    display: flex;
+    justify-content: center;
+}
+
+#entity{
+    display: flex;
+    justify-content: center;
+}
+
+#entity:active{
+    filter: invert(11%) sepia(99%) saturate(7286%) hue-rotate(0deg) brightness(103%) contrast(104%);
+}
+
+@media (max-width: 560px) {
+    #entity{
+        width: 310px;
+        height: 235px;
+        margin-left: 20px;
+    }
+}
