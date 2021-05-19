@@ -4,13 +4,11 @@
 }
 
 #scoreCounter{
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
-#entity{
-    display: flex;
-    justify-content: center;
+.entity{
+    text-align: center;
 }
 
 #entity:active{
