@@ -3,17 +3,49 @@
     margin: 0;
 }
 
-#entityHp{
+#entityHp {
     text-align: center;
 }
 
-.entity{
+.entity {
     text-align: center;
 }
 
-#entity:active{
+#entity:active {
     filter: invert(11%) sepia(99%) saturate(7286%) hue-rotate(0deg) brightness(103%) contrast(104%);
 }
+
+.progress {
+    display: flex;
+    justify-content: center;
+}
+
+.progress__line {
+    background: red;
+    bottom: 0;
+    color: #fff;
+    left: 0;
+    top: 0;
+    position: absolute;
+    text-align: center;
+}
+
+.progress__line-bg{
+    background: #ccc;
+    border-radius: 10px;
+    height: 20px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 445px;
+}
+
+
+
+
+
+
+
 
 @media (max-width: 560px) {
     #entity{
