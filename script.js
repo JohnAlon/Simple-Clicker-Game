@@ -1,7 +1,7 @@
 let entity = document.getElementById('entity')
-let counter = document.getElementById('scoreCounter')
-let score = 0
+let entityHp = document.getElementById('entityHp')
+let hp = 500
 entity.addEventListener('click', function(){
-    score++
-    counter.textContent = 'Your score: ' + score
+    hp--
+    entityHp.textContent = 'HP: ' + hp
 });
