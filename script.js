@@ -2,7 +2,7 @@ let entity = document.getElementById('entity')
 let entityHp = document.getElementById('entityHp')
 let killDispaly = document.getElementById('kills')
 let damageDisplay = document.getElementById('damage')
-let hp = 10
+let hp = 1000
 let kills = 0
 let bonus = 0
 entity.addEventListener('click', function(){
@@ -13,7 +13,7 @@ entity.addEventListener('click', function(){
 
     if (hp <= 0){
 
-        hp = 10
+        hp = 1000
         kills++
         killDispaly.textContent = 'Kills: ' + kills
 
