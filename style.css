@@ -21,6 +21,7 @@
 
 #entityHp {
     text-align: center;
+    font-family: pixel;
 }
 
 .entity {
@@ -56,15 +57,12 @@
     max-width: 445px;
 }
 
-
-
-
-
-
-
-
 @media (max-width: 560px) {
     #entity{
         margin-left: 20px;
+    }
+    
+    .progress__line-bg {
+        max-width: 350px;
     }
 }
