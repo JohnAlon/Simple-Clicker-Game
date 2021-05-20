@@ -2,23 +2,23 @@ let entity = document.getElementById('entity')
 let entityHp = document.getElementById('entityHp')
 let killDispaly = document.getElementById('kills')
 let damageDisplay = document.getElementById('damage')
-let health = 500
+let health = 100
 let hp = health
 let kills = 0
 let bonus = 0
 
 function firstEnemy() {
-    health = 500
+    health = 100
     document.getElementById("entity").src="img/green_slime.png";
 }
 
 function secondEnemy() {
-    health = 700
+    health = 200
     document.getElementById("entity").src="img/blue_slime.png";
 }
 
 function thirdEnemy() {
-    health = 1000
+    health = 300
     document.getElementById("entity").src="img/red_slime.png";
 }
 
