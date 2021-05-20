@@ -29,7 +29,16 @@ entity.addEventListener('click', function(){
     let killBonus = kills % 10
 
     if (hp <= 0){
-
+        let randEnemy = Math.round((Math.random() * 4))
+        if (randEnemy == 1) {
+            firstEnemy()
+        }
+        if (randEnemy == 2) {
+            secondEnemy()
+        }
+        if (randEnemy == 3) {
+            thirdEnemy()
+        }
         hp = health
         kills++
         killDispaly.textContent = kills
@@ -41,16 +50,6 @@ entity.addEventListener('click', function(){
             }
         }
         damageDisplay.textContent = bonus + 1
-        let randEnemy = Math.round((Math.random() * 4))
-        if (randEnemy == 1) {
-            firstEnemy()
-        }
-        if (randEnemy == 2) {
-            secondEnemy()
-        }
-        if (randEnemy == 3) {
-            thirdEnemy()
-        }
     }
 
     function progress() {
