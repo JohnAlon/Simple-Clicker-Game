@@ -27,8 +27,12 @@ entity.addEventListener('click', function(){
     hp = hp - damage
     entityHp.textContent = 'HP: ' + hp
     let killBonus = kills % 10
-
-    if (hp <= 0){
+    
+    if (hp < 0) {
+        hp = 0
+    }
+    
+    if (hp == 0){
         let randEnemy = Math.round((Math.random() * 4))
         if (randEnemy == 1) {
             firstEnemy()
