@@ -25,12 +25,11 @@ function thirdEnemy() {
 entity.addEventListener('click', function(){
     let damage = 1 + bonus
     hp = hp - damage
-    entityHp.textContent = 'HP: ' + hp
-    let killBonus = kills % 10
-    
     if (hp < 0) {
         hp = 0
     }
+    entityHp.textContent = 'HP: ' + hp
+    let killBonus = kills % 10
     
     if (hp == 0){
         let randEnemy = Math.round((Math.random() * 4))
