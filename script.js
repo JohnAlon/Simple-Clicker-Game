@@ -2,7 +2,7 @@ let entity = document.getElementById('entity')
 let entityHp = document.getElementById('entityHp')
 let killDispaly = document.getElementById('kills')
 let damageDisplay = document.getElementById('damage')
-let hp = 1000
+let hp = 10
 let kills = 0
 let bonus = 0
 entity.addEventListener('click', function(){
@@ -13,9 +13,9 @@ entity.addEventListener('click', function(){
 
     if (hp <= 0){
 
-        hp = 1000
+        hp = 10
         kills++
-        killDispaly.textContent = 'Kills: ' + kills
+        killDispaly.textContent = kills
 
         if (kills >= 10) {
             let x = kills % 10
@@ -23,7 +23,7 @@ entity.addEventListener('click', function(){
                 bonus ++
             }
         }
-        damageDisplay.textContent = 'Damage: ' + (bonus + 1)
+        damageDisplay.textContent = bonus + 1
     }
 
     function progress() {
@@ -32,7 +32,4 @@ entity.addEventListener('click', function(){
         elem.style.width = per + '%';
     }
     progress();
-
-    console.log(kills + ' --- ' + bonus)
-
 });

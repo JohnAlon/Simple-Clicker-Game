@@ -8,12 +8,17 @@
     margin: 0;
 }
 
-.toolbar {
-    background: #9d661f;
+.toolbar__img {
+    position: relative;
+    width: 100%;
 }
 
 .toolbar__item {
-    display: flex;
+    position: absolute;
+    top: 15%;
+    left: 3.5%;
+    width: 100%;
+
     font-family: pixel;
     font-size: 32px;
     color: #fff;
@@ -61,8 +66,14 @@
     #entity{
         margin-left: 20px;
     }
-    
+
     .progress__line-bg {
         max-width: 350px;
+    }
+
+    .toolbar__item {
+        position: absolute;
+        top: 15%;
+        left: 13%;
     }
 }
