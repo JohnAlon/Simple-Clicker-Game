@@ -8,25 +8,20 @@
     margin: 0;
 }
 
+body {
+    background: #75c4a5;
+}
+
 .toolbar__img {
     position: relative;
     width: 100%;
 }
 
 .toolbar__item {
-    position: absolute;
-    top: 15%;
-    left: 3.5%;
-    width: 100%;
-
+    margin: -42px 0 60px 60px;
     font-family: pixel;
     font-size: 32px;
     color: #fff;
-}
-
-#entityHp {
-    text-align: center;
-    font-family: pixel;
 }
 
 .entity {
@@ -43,7 +38,7 @@
 }
 
 .progress__line {
-    background: red;
+    background: rgb(236, 96, 96);
     bottom: 0;
     color: #fff;
     left: 0;
@@ -51,7 +46,13 @@
     position: absolute;
     text-align: center;
 }
-
+#entityHp {
+    font-family: pixel;
+    position: absolute;
+    top: 192px;
+    text-align: center;
+    color: rgb(22, 22, 22);
+}
 .progress__line-bg{
     background: #ccc;
     border-radius: 10px;
@@ -71,9 +72,15 @@
         max-width: 350px;
     }
 
+    .toolbar {
+        display: flex;
+    }
+
     .toolbar__item {
-        position: absolute;
-        top: 20%;
-        left: 13%;
+        margin: -42px 0 60px 55px;
+    }
+
+    #entityHp {
+        top: 93px;
     }
 }
