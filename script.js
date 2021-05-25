@@ -33,7 +33,7 @@ entity.addEventListener('click', function(){
     entityHp.textContent = hp + "/" + health
     let killBonus = kills % 10
     
-    if (hp == 0){
+    if (hp <= 0){
         death = true
     if (death = true){
 
