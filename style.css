@@ -35,6 +35,7 @@ body {
 .progress {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .progress__line {
@@ -78,9 +79,5 @@ body {
 
     .toolbar__item {
         margin: -42px 0 60px 55px;
-    }
-
-    #entityHp {
-        top: 93px;
     }
 }
